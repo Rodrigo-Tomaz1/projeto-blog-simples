@@ -17,7 +17,7 @@ Olá pessoas, meu nome é Rodrigo.
 
 Este projeto é um projeto para o meu aprendizado.
 
-Então, eu peguei no Figma para praticar, lembrando à você que este projeto é bem simple, então tente fazer. ;D
+Então, eu peguei este no Figma para praticar, lembrando à você que este projeto é bem simple, então tente fazer. ;D
 
 O nome da dona do projeto é Camila possebon, todos os creditos para ela.
 
