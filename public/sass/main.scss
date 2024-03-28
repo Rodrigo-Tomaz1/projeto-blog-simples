@@ -1,0 +1,134 @@
+// Font Google
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// VARIABLES CSS - VARIAVEIS CSS
+$primary-color: #fff;
+$secund-color: #DC062C;
+$third: #3000BA;
+
+$font-family: 'Inter', sans-serif;
+
+$font-size-h1: 50px;
+$font-size-h2: 40px;
+$font-size-a: 25px;
+
+$font-height-300: 300;
+$font-height-500: 500;
+$font-height-600: 600;
+
+// RESET CSS - SETANDO O CSS
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+a { text-decoration: none; }
+li { list-style: none; }
+img { height: auto; }
+
+// HEADER - CABEÇALHO
+
+header{
+    width: 100%;
+    height: 14.65%;
+    background: $third;
+    display: flex;
+    align-items: end;
+
+    .menu_options{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;    
+        padding: 25px 110px;
+        
+        a{
+            color: $primary-color;
+            font-size: $font-size-a;
+            font-weight: $font-height-300;
+            position: relative;
+        }   
+        a:hover{
+            color: #9d97af;
+            transition: 1s ease-out;
+        }
+        a:hover:before{
+            content: "";
+            position: absolute;
+            bottom: -9px;
+            width: 100%;
+            height: 3px;
+            background: $primary-color;
+            display: block;
+            animation: show-a-before 1s forwards;
+        }
+        @keyframes show-a-before{
+            from{
+                width: 0;
+            } to {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// MAIN - PRINCIPAL
+main{
+    width: 100%;
+    height: 67.29%;
+    background: $secund-color;
+    position: relative;
+
+    h1{
+        font-size: $font-size-h1;
+        color: $primary-color;
+        font-weight: $font-height-300;
+        position: absolute;
+        top: 111px;
+        left: 15.21%;
+    }
+    h2{
+        font-size: $font-size-h2;
+        color: $primary-color;
+        font-weight: $font-height-300;
+        position: absolute;
+        top: 285px;
+        left: 16.32%;
+        text-align: end;
+    }
+    .astronauta-img{
+        width: 424px;
+        height: 422px;
+        position: absolute;
+        right: 0;
+        top: 215px;
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// FOOTER - RODAPE  
+
+footer{
+    width: 100%;
+    height: 18.07%;
+    background: $third; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+        width: 198px;
+        height: 100px;
+    }
+}
